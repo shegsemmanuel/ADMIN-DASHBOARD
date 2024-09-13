@@ -16,7 +16,6 @@ const salesData = [
     {name: "Jun", sales: 7500 },
 ];
 
-import React from 'react'
 
 const SalesOverviewChart = () => {
   return (
