@@ -83,7 +83,15 @@ const UserTable = () => {
                      <div className="text-sm font-medium text-gray-100">{user.name}</div>
                   </div>
                 </div>
+              </td>
 
+              <td className="px-6 py-4 whitespace-nowrap">
+                 <div className="text-sm text-gray-300">{user.email}</div> 
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap">
+                 <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-800">
+                   {user.role}
+                 </span>
               </td>
 
             </motion.tr>
