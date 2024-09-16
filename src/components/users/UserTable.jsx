@@ -30,7 +30,7 @@ const UserTable = () => {
        animate={{ opacity: 1, y: 0 }}
        transition={{ delay: 0.2 }}
     >
-      <div className="flex justify-between items-center mb-60">
+      <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-semibold text-gray-100">Users</h2>
         <div className="relative">
           <input 
@@ -94,6 +94,22 @@ const UserTable = () => {
                  </span>
               </td>
 
+              <td className="px-6 py-4 whitespace-nowrap">
+                <span
+                  className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                    user.status === "Active"
+                    ? "bg-green-800 text-green-100"
+                    : "bg-red-800 text-red-100"
+                  }`}
+                >
+                  {user.status}
+                </span> 
+              </td>
+
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                  <button className="text-indigo-400 hover:text-indigo-300 mr-2">Edit</button>
+                  <button className="text-red-400 hover:text-red-300">Delete</button>
+              </td>
             </motion.tr>
            ))}
         </tbody>

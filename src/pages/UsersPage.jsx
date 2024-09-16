@@ -33,7 +33,7 @@ const UsersPage = () => {
     <StatCard 
         name='Active Users'
         icon={UserCheck}
-        value={userStats.activeUsers.toLocaleString}
+        value={userStats.activeUsers.toLocaleString()}
         color="#F59E0B"
     />
     <StatCard name='Churn Rate' icon={UserX} value={userStats.churnRate} color="#EF4444" />
