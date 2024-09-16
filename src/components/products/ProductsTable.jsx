@@ -98,6 +98,9 @@ const ProductsTable = () => {
                       {product.category}
                     </td>
 
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                      ${product.price.toFixed(2)}
+                    </td>
                    
                   </motion.tr>
                  ))}
