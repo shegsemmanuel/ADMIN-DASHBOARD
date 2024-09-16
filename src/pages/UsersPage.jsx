@@ -2,6 +2,7 @@ import Header from '../components/common/Header';
 import { motion } from 'framer-motion';
 import StatCard from '../components/common/StatCard';
 import { UserCheck, UserPlus, UsersIcon, UserX } from 'lucide-react';
+import UserTable from '../components/users/UserTable';
 
 const userStats = {
     totalUsers: 152845,
@@ -36,9 +37,9 @@ const UsersPage = () => {
         color="#F59E0B"
     />
     <StatCard name='Churn Rate' icon={UserX} value={userStats.churnRate} color="#EF4444" />
-    
     </motion.div>
-    
+
+    <UserTable />
     </main>
     </div>
   
