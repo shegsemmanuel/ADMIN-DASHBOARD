@@ -94,6 +94,11 @@ const ProductsTable = () => {
                       {product.name}
                     </td>
                     
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                      {product.category}
+                    </td>
+
+                   
                   </motion.tr>
                  ))}
          </table>
@@ -101,6 +106,6 @@ const ProductsTable = () => {
     </motion.div>
   )
 };
-
+ 
 export default ProductsTable;
 
