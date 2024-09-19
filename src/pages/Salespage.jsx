@@ -2,6 +2,7 @@ import Header from "../components/common/Header"
 import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
+import SalesOverviewChart from "../components/sales/SalesOverviewChart";
 
 const salesStats = {
     totalRevenue: "$1,234,567",
@@ -39,8 +40,9 @@ const Salespage = () => {
                 color='#F59E0B'
              />
              <StatCard name='Sales Growth' icon={CreditCard} value={salesStats.salesGrowth} color='#EF4444' />
-
          </motion.div>
+
+         <SalesOverviewChart/>
         </main>
     </div>
   )
