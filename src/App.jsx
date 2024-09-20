@@ -5,6 +5,7 @@ import Siderbar from "./components/Siderbar";
 import UsersPage from "./pages/UsersPage";
 import Salespage from "./pages/Salespage";
 import Orderspage from "./pages/OrdersPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
 
 function App() {
  return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/users" element={<UsersPage/>} />
             <Route path="/sales" element={<Salespage/>} />
             <Route path="/orders" element={<Orderspage/>} />
+            <Route path="/analytics" element={<AnalyticsPage/>} />
         </Routes>
     </div>
  )
