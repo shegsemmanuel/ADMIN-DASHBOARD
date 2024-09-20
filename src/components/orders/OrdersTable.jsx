@@ -69,8 +69,48 @@ const OrdersTable = () => {
              </th> 
             </tr>
             </thead> 
+            <tbody className="divide divide-gray-700">
+                {filteredOrders.map((order) =>(
+                   <motion.tr
+                     key={order.id}
+                     initial={{ opacity: 0}}
+                     animate={{ opacity: 1 }}
+                     transition={{ duration: 0.3 }}
+                   >
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
+                        {order.id}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
+                        {order.customer}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
+                        ${order.total.toFixed(2)}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                        <span
+                          className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                            order.status === "Delivered"
+                            ? "bg-green-100 text-green-800"
+                            : order.status === "Processing"
+                            ? "bg-yellow-100 text-yellow-800"
+                            : order.status === "Shipped"
+                            ? "bg-blue-100 text-blue-800"
+                            : "bg-red-100 text-red-800"
+                          }`}
+                        >
+                            {order.status}
+                        </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{order.date}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                        <button className="text-indigo-400 hover:text-indigo-300 mr-2">
+                            <Eye size={18}/>
+                        </button>
+                    </td>
+                   </motion.tr> 
+                ))}
+            </tbody>
         </table>
-
     </div>
    </motion.div>
   );
