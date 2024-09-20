@@ -50,4 +50,4 @@ const OrderDistribution = () => {
   )
 };
 
-export default OrderDistribution
+export default OrderDistribution;
