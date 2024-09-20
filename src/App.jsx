@@ -4,6 +4,7 @@ import OverviewPage from "./pages/OverviewPage";
 import Siderbar from "./components/Siderbar";
 import UsersPage from "./pages/UsersPage";
 import Salespage from "./pages/Salespage";
+import Orderspage from "./pages/OrdersPage";
 
 function App() {
  return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/products" element={<ProductsPage/>} />
             <Route path="/users" element={<UsersPage/>} />
             <Route path="/sales" element={<Salespage/>} />
+            <Route path="/orders" element={<Orderspage/>} />
         </Routes>
     </div>
  )
