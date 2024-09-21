@@ -3,7 +3,7 @@ import ProductsPage from "./pages/ProductsPage";
 import OverviewPage from "./pages/OverviewPage";
 import Siderbar from "./components/Siderbar";
 import UsersPage from "./pages/UsersPage";
-import Salespage from "./pages/Salespage";
+import Salespage from "./pages/SalesPage";
 import Orderspage from "./pages/OrdersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SettingsPage from "./pages/SettingsPage";

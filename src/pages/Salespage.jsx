@@ -2,9 +2,9 @@ import Header from "../components/common/Header"
 import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
-import SalesOverviewChart from "../components/Sales/SalesOverviewChart";
-import SalesByCategoryChart from "../components/Sales/SalesByCategoryChart";
-import DailySaleTrend from "../components/Sales/DailySaleTrend";
+import SalesOverviewChart from "../components/sales/SalesOverviewChart";
+import SalesByCategoryChart from "../components/sales/SalesByCategoryChart";
+import DailySaleTrend from "../components/sales/DailySaleTrend";
 
 
 const salesStats = {
@@ -16,7 +16,7 @@ const salesStats = {
 
 
 
-const Salespage = () => {
+const SalesPage = () => {
   return (
     <div className='flex-1  overflow-auto relative z-10'>
         <Header title='Sales' />
@@ -55,4 +55,4 @@ const Salespage = () => {
   )
 };
 
-export default Salespage;
+export default SalesPage;
