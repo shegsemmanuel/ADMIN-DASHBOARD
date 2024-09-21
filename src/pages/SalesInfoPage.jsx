@@ -16,7 +16,7 @@ const salesStats = {
 
 
 
-const SalesPage = () => {
+const SalesInfoPage = () => {
   return (
     <div className='flex-1  overflow-auto relative z-10'>
         <Header title='Sales' />
@@ -55,4 +55,4 @@ const SalesPage = () => {
   )
 };
 
-export default SalesPage;
+export default SalesInfoPage;
