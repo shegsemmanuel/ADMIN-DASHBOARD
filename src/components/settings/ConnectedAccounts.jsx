@@ -1,6 +1,6 @@
 import { useState } from "react"
 import SettingSection from "./SettingSection"
-import { HelpCircle } from "lucide-react";
+import { HelpCircle, Plus } from "lucide-react";
 
 const ConnectedAccounts = () => {
   const [ConnectedAccounts, setConnectedAccounts] = useState([
@@ -52,6 +52,10 @@ const ConnectedAccounts = () => {
             </button>
         </div>
        ))} 
+
+       <button className="mt-4 flex items-center text-indigo-400 hover:text-indigo-300 transition duration-200">
+        <Plus size={18} className="mr-2" /> Add Account
+       </button>
   </SettingSection>
    
 };
