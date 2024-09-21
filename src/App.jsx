@@ -3,7 +3,7 @@ import ProductsPage from "./pages/ProductsPage";
 import OverviewPage from "./pages/OverviewPage";
 import Siderbar from "./components/Siderbar";
 import UsersPage from "./pages/UsersPage";
-import SalesPage from "./pages/SalesPage.jsx";
+import SalesPage from "./pages/SalesPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SettingsPage from "./pages/SettingsPage";
 import OrdersPage from "./pages/OrdersPage";
@@ -28,7 +28,7 @@ function App() {
             <Route path="/settings" element={<SettingsPage/>} />
         </Routes>
     </div>
- )
+ );
 };
 
 export default App;
