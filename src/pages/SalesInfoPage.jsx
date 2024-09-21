@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
 import SalesOverviewChart from "../components/sales/SalesOverviewChart";
-import SalesByCategoryChart from "../components/sales/SalesByCategoryChart";
+import SalesInByCategoryChart from "../components/sales/SalesInByCategoryChart";
 import DailySaleTrend from "../components/sales/DailySaleTrend";
 
 
@@ -47,7 +47,7 @@ const SalesInfoPage = () => {
 
          <SalesOverviewChart/>
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <SalesByCategoryChart />
+            <SalesInByCategoryChart />
             <DailySaleTrend />
          </div>
         </main>
