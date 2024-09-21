@@ -3,10 +3,11 @@ import ProductsPage from "./pages/ProductsPage";
 import OverviewPage from "./pages/OverviewPage";
 import Siderbar from "./components/Siderbar";
 import UsersPage from "./pages/UsersPage";
-import Salespage from "./pages/SalesPage";
+import SalesPage from "./pages/SalesPage";
 import Orderspage from "./pages/OrdersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SettingsPage from "./pages/SettingsPage";
+import SalesPage from "./pages/SalesPage";
 
 function App() {
  return (
@@ -22,7 +23,7 @@ function App() {
             <Route path="/" element={<OverviewPage />} />
             <Route path="/products" element={<ProductsPage/>} />
             <Route path="/users" element={<UsersPage/>} />
-            <Route path="/sales" element={<Salespage/>} />
+            <Route path="/sales" element={<SalesPage/>} />
             <Route path="/orders" element={<Orderspage/>} />
             <Route path="/analytics" element={<AnalyticsPage/>} />
             <Route path="/settings" element={<SettingsPage/>} />
