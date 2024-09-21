@@ -7,7 +7,6 @@ import SalesPage from "./pages/SalesPage";
 import Orderspage from "./pages/OrdersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SettingsPage from "./pages/SettingsPage";
-import SalesPage from "./pages/SalesPage";
 
 function App() {
  return (
