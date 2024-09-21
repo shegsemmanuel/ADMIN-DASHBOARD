@@ -45,4 +45,4 @@ const UserGrowthChart = () => {
     </motion.div>
   );
 };
-export default UserGrowthChart
+export default UserGrowthChart;

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import StatCard from '../components/common/StatCard';
 import { UserCheck, UserPlus, UsersIcon, UserX } from 'lucide-react';
 import UserTable from '../components/users/UserTable';
-import UserGrowthChart from '../components/users/userGrowthChart';
+import UserGrowthChart from '../components/users/UserGrowthChart';
 import UserActivityHeatmap from '../components/users/UserActivityHeatmap';
 import UserDemograpichsChart from '../components/users/UserDemograpichsChart';
 
