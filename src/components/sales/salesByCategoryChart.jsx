@@ -50,4 +50,4 @@ const SalesByCategoryChart = () => {
   );
 };
 
-export default SalesByCategoryChart
+export default SalesByCategoryChart;
