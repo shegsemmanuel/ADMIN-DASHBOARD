@@ -6,6 +6,7 @@ import UsersPage from "./pages/UsersPage";
 import Salespage from "./pages/Salespage";
 import Orderspage from "./pages/OrdersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
+import SettingsPage from "./pages/SettingsPage";
 
 function App() {
  return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/sales" element={<Salespage/>} />
             <Route path="/orders" element={<Orderspage/>} />
             <Route path="/analytics" element={<AnalyticsPage/>} />
+            <Route path="/settings" element={<SettingsPage/>} />
         </Routes>
     </div>
  )
